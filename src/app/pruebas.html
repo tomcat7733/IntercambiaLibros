@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.min.css" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      footer {
+        margin-top: auto;
+      }
+
+      main {
+        flex: 1;
+      }
+      .custom-rectangle {
+        width: 25rem;
+        height: 55rem;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 87%, 0% 100%);
+      }
+      .custom-container-comment {
+        width: 90rem;
+        height: 19rem;
+        clip-path: polygon(27% 0, 27% 22%, 100% 22%, 100% 100%, 0 100%, 0 0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../../public/assets/icons/list.svg" alt="iconoMenu" width="35" height="25" />
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">IntercambiaLibros</a>
+            </li>
+          </ul>
+          <!-- Barra de busqueda -->
+          <div class="d-flex justify-content-center w-100">
+            <form class="d-flex" role="search" style="max-width: 500px; width: 100%">
+              <div class="input-group">
+                <input type="search" class="form-control" placeholder="Buscar" aria-label="Buscar" />
+                <button class="btn btn-outline-secondary" type="submit">
+                  <img src="../../public/assets/icons/search.svg" alt="iconoBusqueda" width="20" height="20" />
+                </button>
+              </div>
+            </form>
+          </div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 text-nowrap px-2" href="#">
+                <img src="../../public/assets/icons/cloud-upload.svg" alt="iconoSubirLibro" with="18" height="18" />
+                Subir Libro
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 text-nowrap px-2" href="#">
+                <img src="../../public/assets/icons/person-fill.svg" alt="iconoCuenta" with="18" height="18" />
+                Mi Cuenta
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2 text-nowrap ps-2" href="#">
+                <img src="../../public/assets/icons/bell.svg" alt="iconoNotificacion" with="18" height="18" />
+                Notificacion
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-5 mt-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-5 col my-5 ps-0">
+            <div class="custom-rectangle bg-secondary ms-5 rounded-top">
+              <div class="row">
+                <div class="col-12 col d-flex flex-column align-items-center h-100 mt-5 mb-4">
+                  <img src="../../public/assets/img/Portada3.png" class="rounded" alt="logo" width="225" height="300" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col ps-5 mt-2">
+                  <p class="ps-3 fw-semibold">Autor</p>
+                  <p class="ps-3 fw-semibold">Editorial</p>
+                  <p class="ps-3 fw-semibold">Categoria</p>
+                  <p class="ps-3 fw-semibold">Tapa</p>
+                  <p class="ps-3 fw-semibold">ISBN</p>
+                  <p class="ps-3 fw-semibold">Intercambio</p>
+                  <p class="ps-3 fw-semibold">Estado</p>
+                  <p class="ps-3 fw-semibold">Ubicación</p>
+                  <p class="ps-3 fw-semibold pt-3">Vendedor</p>
+                </div>
+                <div class="col-6 col mt-2">
+                  <p>Julian Alonso</p>
+                  <p>Ojo dulce</p>
+                  <p>Terror</p>
+                  <p>Blanda</p>
+                  <p>123456789</p>
+                  <p>Presencial</p>
+                  <p>Usado</p>
+                  <p>Madrid</p>
+                  <p class="pt-3">Julian Alonso</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 col">
+            <div class="container mt-5 pt-4">
+              <h2 class="fw-semibold">REYES CAÍDOS - JULIÁN ALONOSO</h2>
+              <p class="fw-medium mt-5">Descripción del vendedor:</p>
+              <p class="fw-light mt-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, optio rem quod voluptate recusandae
+                illum dolorum ducimus, earum aliquam culpa sequi doloribus error magnam, illo deleniti vero. Nam, fuga
+                natus!
+              </p>
+              <p class="fw-semibold mt-5">
+                "¡Gracias por elegir el intercambio de libros! Al dar una nueva vida a este libro, estás ayudando a
+                reducir el desperdicio y a cuidar el medio ambiente. Juntos fomentamos la reutilización, apoyamos la
+                sostenibilidad y construimos una comunidad más consciente."
+              </p>
+              <p>🌱📚</p>
+            </div>
+            <div class="container d-flex align-items-center justify-content-center gap-2 mt-5">
+              <button type="button" class="btn btn-outline-danger rounded-circle border-0">
+                <img
+                  src="../../public/assets/icons/Cupid.gif"
+                  alt="Icono de corazón"
+                  style="width: 50px; height: 50px"
+                />
+              </button>
+              <p class="fw-semibold pt-3">Agregar a lista de deseados</p>
+            </div>
+            <div class="container d-flex justify-content-between gap-5 mt-3">
+              <button type="button" class="btn btn-dark mt-5">Contactar con el vendedor</button>
+              <button type="button" class="btn btn-dark mt-5">Solicitar intercambio</button>
+            </div>
+          </div>
+          <div class="col-2 col"></div>
+        </div>
+        <div class="container-fluid my-5 ps-0">
+          <div class="custom-container-comment bg-secondary ms-5 rounded">
+            <div class="row h-100">
+              <div class="col-7 col">
+                <h3 class="fw-semibold pt-4 ps-5 text-dark">Opiniones del libro</h3>
+                <div class="container mt-5 pt-4 ps-4">
+                  <p class="fw-medium">¿Léiste este libro? Inicia sesión para poder agregar tu propia evaluación.</p>
+                </div>
+              </div>
+              <div class="col-2 col"></div>
+              <div
+                class="col-3 col d-flex flex-column justify-content-center align-items-center border-start border-succes"
+              >
+                <div class="d-flex flex-column me-3 pt-5 mt-4">
+                  <!-- Fila 1 -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex">
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                    </div>
+                    <p class="mb-0 ps-4 fw-bold">0%</p>
+                  </div>
+                  <!-- Fila 2 -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex">
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                    </div>
+                    <p class="mb-0 ps-4 fw-bold">0%</p>
+                  </div>
+                  <!-- Fila 3-->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex">
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                    </div>
+                    <p class="mb-0 ps-4 fw-bold">0%</p>
+                  </div>
+                  <!-- Fila 4-->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex">
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                    </div>
+                    <p class="mb-0 ps-4 fw-bold">0%</p>
+                  </div>
+                  <!-- Fila 5-->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex">
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                      <img
+                        src="../../public/assets/icons/icons8-estrella-48.png"
+                        alt="icono de una estrella"
+                        style="width: 25px; height: 25px"
+                      />
+                    </div>
+                    <p class="mb-0 ps-4 fw-bold">0%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <div class="container-fluid mx-0 p-0 border-top" style="--bs-border-opacity: 0.5">
+      <footer class="py-5 bottom-0 w-100 pb-0 pt-3">
+        <div class="row align-items-center m-0">
+          <!-- Sección Izquierda -->
+          <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+            <p class="mb-0 me-0 text-center">¿Necesitas ayuda?</p>
+            <button
+              type="button"
+              class="btn btn-outline-info mt-4 px-3 py-1 d-flex align-items-center justify-content-center rounded-pill"
+              style="width: 120px"
+            >
+              Contáctanos
+            </button>
+          </div>
+
+          <!-- Sección Derecha -->
+          <div class="col-12 col-md-8 d-flex justify-content-end gap-5 p-0">
+            <div class="col-auto">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sobre Nosotros</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Quienes somos</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Donaciones</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Afiliados</a></li>
+              </ul>
+            </div>
+
+            <div class="col-auto">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ayuda</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cookies</a></li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Política de privacidad</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary text-nowrap">Términos y condiciones</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-auto">
+              <ul class="nav flex-column me-4">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Localidad</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">España</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2 d-flex gap-3">
+                  <a href="#" class="nav-link p-0 text-body-secondary">
+                    <img src="../../public/assets/icons/instagram.svg" width="18" height="18" />
+                  </a>
+                  <a href="#" class="nav-link p-0 text-body-secondary">
+                    <img src="../../public/assets/icons/facebook.svg" width="18" height="18" />
+                  </a>
+                  <a href="#" class="nav-link p-0 text-body-secondary">
+                    <img src="../../public/assets/icons/youtube.svg" width="18" height="18" />
+                  </a>
+                  <a href="#" class="nav-link p-0 text-body-secondary">
+                    <img src="../../public/assets/icons/twitter-x.svg" width="18" height="18" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../../public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
