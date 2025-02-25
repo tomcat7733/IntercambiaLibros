@@ -87,9 +87,14 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 text-nowrap px-2" href="#">
+              <a
+                class="nav-link d-flex align-items-center gap-2 text-nowrap px-2"
+                data-bs-toggle="modal"
+                data-bs-target="#modalIniciarSesion"
+                href="#"
+              >
                 <img src="../../public/assets/icons/person-fill.svg" alt="iconoCuenta" with="18" height="18" />
-                Mi Cuenta
+                Iniciar sesión
               </a>
             </li>
             <li class="nav-item">
@@ -102,251 +107,147 @@
         </div>
       </div>
     </nav>
+    <!-- MODAL REGISTRO -->
+    <div
+      class="modal fade"
+      id="modalIniciarSesion"
+      tabindex="-1"
+      aria-labelledby="modalIniciarSesion"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <section class="h-100 gradient-form" style="background-color: #eee">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="card-body px-md-5 pb-md-5 pt-md-3 mx-md-4">
+                  <div class="text-center">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                      style="width: 185px"
+                      alt="logo"
+                    />
+                    <h4 class="mt-1 mb-5 pb-1">IntercambiaLibros</h4>
+                  </div>
 
-    <main class="pt-5 mt-3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-5 col my-5 ps-0">
-            <div class="custom-rectangle bg-secondary ms-5 rounded-top">
-              <div class="row">
-                <div class="col-12 col d-flex flex-column align-items-center h-100 mt-5 mb-4">
-                  <img src="../../public/assets/img/Portada3.png" class="rounded" alt="logo" width="225" height="300" />
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                      <label for="floatingInput">Usuario</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                      <label for="floatingPassword">Contraseña</label>
+                    </div>
+
+                    <div class="text-center mt-4 pb-2 d-flex justify-content-between">
+                      <button class="btn btn-outline-primary" style="width: 80%" type="submit">Iniciar Sesión</button>
+                      <a class="text-muted" href="#!">¿Olvidaste la contraseña?</a>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center m-3 gap-3">
+                      <p class="mb-0 me-2">¿No tienes una cuenta?</p>
+                      <button
+                        type="button"
+                        style="width: 40%"
+                        class="btn btn-outline-danger border-0 py-0"
+                        data-bs-target="#modalRegistro"
+                        data-bs-toggle="modal"
+                      >
+                        Registrate
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-6 col ps-5 mt-2">
-                  <p class="ps-3 fw-semibold">Autor</p>
-                  <p class="ps-3 fw-semibold">Editorial</p>
-                  <p class="ps-3 fw-semibold">Categoria</p>
-                  <p class="ps-3 fw-semibold">Tapa</p>
-                  <p class="ps-3 fw-semibold">ISBN</p>
-                  <p class="ps-3 fw-semibold">Intercambio</p>
-                  <p class="ps-3 fw-semibold">Estado</p>
-                  <p class="ps-3 fw-semibold">Ubicación</p>
-                  <p class="ps-3 fw-semibold pt-3">Vendedor</p>
-                </div>
-                <div class="col-6 col mt-2">
-                  <p>Julian Alonso</p>
-                  <p>Ojo dulce</p>
-                  <p>Terror</p>
-                  <p>Blanda</p>
-                  <p>123456789</p>
-                  <p>Presencial</p>
-                  <p>Usado</p>
-                  <p>Madrid</p>
-                  <p class="pt-3">Julian Alonso</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-5 col">
-            <div class="container mt-5 pt-4">
-              <h2 class="fw-semibold">REYES CAÍDOS - JULIÁN ALONOSO</h2>
-              <p class="fw-medium mt-5">Descripción del vendedor:</p>
-              <p class="fw-light mt-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, optio rem quod voluptate recusandae
-                illum dolorum ducimus, earum aliquam culpa sequi doloribus error magnam, illo deleniti vero. Nam, fuga
-                natus!
-              </p>
-              <p class="fw-semibold mt-5">
-                "¡Gracias por elegir el intercambio de libros! Al dar una nueva vida a este libro, estás ayudando a
-                reducir el desperdicio y a cuidar el medio ambiente. Juntos fomentamos la reutilización, apoyamos la
-                sostenibilidad y construimos una comunidad más consciente."
-              </p>
-              <p>🌱📚</p>
-            </div>
-            <div class="container d-flex align-items-center justify-content-center gap-2 mt-5">
-              <button type="button" class="btn btn-outline-danger rounded-circle border-0">
-                <img
-                  src="../../public/assets/icons/Cupid.gif"
-                  alt="Icono de corazón"
-                  style="width: 50px; height: 50px"
-                />
-              </button>
-              <p class="fw-semibold pt-3">Agregar a lista de deseados</p>
-            </div>
-            <div class="container d-flex justify-content-between gap-5 mt-3">
-              <button type="button" class="btn btn-dark mt-5">Contactar con el vendedor</button>
-              <button type="button" class="btn btn-dark mt-5">Solicitar intercambio</button>
-            </div>
-          </div>
-          <div class="col-2 col"></div>
-        </div>
-        <div class="container-fluid my-5 ps-0">
-          <div class="custom-container-comment bg-secondary ms-5 rounded">
-            <div class="row h-100">
-              <div class="col-7 col">
-                <h3 class="fw-semibold pt-4 ps-5 text-dark">Opiniones del libro</h3>
-                <div class="container mt-5 pt-4 ps-4">
-                  <p class="fw-medium">¿Léiste este libro? Inicia sesión para poder agregar tu propia evaluación.</p>
-                </div>
-              </div>
-              <div class="col-2 col"></div>
-              <div
-                class="col-3 col d-flex flex-column justify-content-center align-items-center border-start border-succes"
-              >
-                <div class="d-flex flex-column me-3 pt-5 mt-4">
-                  <!-- Fila 1 -->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex">
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                    </div>
-                    <p class="mb-0 ps-4 fw-bold">0%</p>
-                  </div>
-                  <!-- Fila 2 -->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex">
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                    </div>
-                    <p class="mb-0 ps-4 fw-bold">0%</p>
-                  </div>
-                  <!-- Fila 3-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex">
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                    </div>
-                    <p class="mb-0 ps-4 fw-bold">0%</p>
-                  </div>
-                  <!-- Fila 4-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex">
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                    </div>
-                    <p class="mb-0 ps-4 fw-bold">0%</p>
-                  </div>
-                  <!-- Fila 5-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex">
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                      <img
-                        src="../../public/assets/icons/icons8-estrella-48.png"
-                        alt="icono de una estrella"
-                        style="width: 25px; height: 25px"
-                      />
-                    </div>
-                    <p class="mb-0 ps-4 fw-bold">0%</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </section>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- MODAL DE REGISTRO-->
+    <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="modalRegistro" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <section class="h-100 gradient-form" style="background-color: #eee">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="card-body px-md-5 pb-md-5 pt-md-3 mx-md-4">
+                  <div class="d-flex flex-column justify-content-center align-items-center text-center my-2 pb-4 ">
+                    <h4 class="mb-0">Crear cuenta</h4>
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                      style="width: 120px"
+                      alt="logo"
+                    />
+                  </div>
+
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                      <label for="floatingInput">Nombre de usuario</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingPassword" placeholder="Email" />
+                      <label for="floatingPassword">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                      <label for="floatingPassword">Contraseña</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                      <label for="floatingPassword">Repetir Contraseña</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckTerminos" required />
+                      <label class="form-check-label" for="flexCheckTerminos">
+                        <span>
+                          He leído y acepto la
+                          <a href="#">política de privacidad</a>
+                        </span>
+                      </label>
+                    </div>
+
+                    <div class="text-center mt-4 pb-2 d-flex justify-content-between">
+                      <button class="btn btn-outline-primary w-100" type="submit">Crear cuenta</button>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center m-3 gap-3">
+                      <div class="d-flex align-items-center w-100">
+                        <div class="flex-grow-1 border-top"></div>
+                        <span class="px-3 mb-0">Ya tengo una cuenta</span>
+                        <div class="flex-grow-1 border-top"></div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-outline-danger w-100"
+                        data-bs-target="#modalIniciarSesion"
+                        data-bs-toggle="modal"
+                      >
+                        Iniciar sesión
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="pt-5 mt-3">
+      <div class="container"></div>
     </main>
 
     <!-- FOOTER -->
