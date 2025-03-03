@@ -1,12 +1,13 @@
 'use client';
+import './styles.css';
 import Image from 'next/image';
 
 export default function LibroSeleccionado() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid mt-5">
       <div className="row">
         <div className="col-5 col my-5 ps-0">
-          <div className="custom-rectangle bg-secondary ms-5 rounded-top">
+          <div className="custom-rectangle bg-secondario ms-5 rounded-top">
             <div className="row">
               <div className="col-12 col d-flex flex-column align-items-center h-100 mt-5 mb-4">
                 <Image src="/assets/img/Portada3.png" className="rounded" alt="logo" width={225} height={300} />
@@ -71,7 +72,7 @@ export default function LibroSeleccionado() {
         <div className="col-2 col" />
       </div>
       <div className="container-fluid my-5 ps-0">
-        <div className="custom-container-comment bg-secondary ms-5 rounded">
+        <div className="custom-container-comment bg-secondario ms-5 rounded">
           <div className="row h-100">
             <div className="col-7 col">
               <h3 className="fw-semibold pt-4 ps-5 text-dark">Opiniones del libro</h3>
@@ -80,7 +81,7 @@ export default function LibroSeleccionado() {
               </div>
             </div>
             <div className="col-2 col" />
-            <div className="col-3 col d-flex flex-column justify-content-center align-items-center border-start border-succes">
+            <div className="col-3 col d-flex flex-column justify-content-center align-items-center border-start border-black">
               <div className="d-flex flex-column me-3 pt-5 mt-4">
                 {/* Fila 1 */}
                 <div className="d-flex justify-content-between align-items-center">

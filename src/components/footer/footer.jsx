@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
       <footer className="py-5 position-static bottom-0 w-100 pb-0 pt-3">
         <div className="row align-items-center m-0">
           {/* Sección Izquierda */}
-          <div className="col-12 col-md-4 d-flex flex-column align-items-center">
+          <div className="col-12 col-md-4 d-flex flex-column align-items-center mb-4 mb-md-0">
             <p className="mb-0 me-0 text-center">¿Necesitas ayuda?</p>
             <button
               type="button"
@@ -19,9 +20,9 @@ export default function Footer() {
           </div>
 
           {/* Sección Derecha */}
-          <div className="col-12 col-md-8 d-flex justify-content-end gap-5 p-0">
-            <div className="col-auto">
-              <ul className="nav flex-column">
+          <div className="col-12 col-md-8 d-flex flex-wrap justify-content-center justify-content-md-end gap-4 gap-md-5 p-0">
+            <div className="col-auto  text-md-start">
+              <ul className="nav flex-column ">
                 <li className="nav-item mb-2">
                   <a href="#" className="nav-link p-0 text-body-secondary">
                     Sobre Nosotros
@@ -45,7 +46,8 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="col-auto">
+            {/* Columna 2 */}          
+            <div className="col-auto text-center text-md-start">
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
                   <a href="#" className="nav-link p-0 text-body-secondary">
@@ -59,19 +61,20 @@ export default function Footer() {
                 </li>
                 <li className="nav-item mb-2">
                   <a href="#" className="nav-link p-0 text-body-secondary">
-                    Política de privacidad
+                    FAQs
                   </a>
                 </li>
                 <li className="nav-item mb-2">
                   <a href="#" className="nav-link p-0 text-body-secondary text-nowrap">
-                    Términos y condiciones
+                    España
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div className="col-auto">
-              <ul className="nav flex-column me-4">
+            {/* Columna 3 */}
+            <div className="col-auto text-center text-md-start">
+              <ul className="nav flex-column">
                 <li className="nav-item mb-2">
                   <a href="#" className="nav-link p-0 text-body-secondary">
                     Localidad
@@ -79,26 +82,26 @@ export default function Footer() {
                 </li>
                 <li className="nav-item mb-2">
                   <a href="#" className="nav-link p-0 text-body-secondary">
-                    España
+                  Política de privacidad
                   </a>
                 </li>
                 <li className="nav-item mb-2">
                   <a href="#" className="nav-link p-0 text-body-secondary">
-                    FAQs
+                  Términos y condiciones
                   </a>
                 </li>
-                <li className="nav-item mb-2 d-flex gap-3">
+                <li className="nav-item mb-2 d-flex justify-content-center justify-content-md-start gap-3">
                   <a href="#" className="nav-link p-0 text-body-secondary">
-                    <img src="/assets/icons/instagram.svg" width="18" height="18" alt="Instagram" />
+                    <Image src="/assets/icons/instagram.svg" width="18" height="18" alt="Instagram" />
                   </a>
                   <a href="#" className="nav-link p-0 text-body-secondary">
-                    <img src="/assets/icons/facebook.svg" width="18" height="18" alt="Facebook" />
+                    <Image src="/assets/icons/facebook.svg" width="18" height="18" alt="Facebook" />
                   </a>
                   <a href="#" className="nav-link p-0 text-body-secondary">
-                    <img src="/assets/icons/youtube.svg" width="18" height="18" alt="YouTube" />
+                    <Image src="/assets/icons/youtube.svg" width="18" height="18" alt="YouTube" />
                   </a>
                   <a href="#" className="nav-link p-0 text-body-secondary">
-                    <img src="/assets/icons/twitter-x.svg" width="18" height="18" alt="Twitter" />
+                    <Image src="/assets/icons/twitter-x.svg" width="18" height="18" alt="Twitter" />
                   </a>
                 </li>
               </ul>

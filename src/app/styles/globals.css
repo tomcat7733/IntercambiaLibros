@@ -17,12 +17,20 @@ nav{
   border-bottom: rgba(11, 11, 22, 0.1) 1px solid;
 }
 
+footer{
+  background-color: var(--background);
+}
+
 html,
 body {
   background-color: var(--background);
-  margin-top: 60px;
   max-width: 100vw;
   overflow-x: hidden;
+  margin-top: 25px;
+}
+
+main{
+  margin-top: 55px;
 }
 
 h1,h2,h3,h4,h5,h6 {

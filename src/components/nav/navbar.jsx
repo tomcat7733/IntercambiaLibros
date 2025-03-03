@@ -1,103 +1,105 @@
-"use client";
-import { useEffect } from "react";
+'use client';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Nav() {
   return (
     <>
-    <nav className="navbar navbar-expand-lg fixed-top pb-3">
-      <div className="container-fluid">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link"
-                href="javascript:void(0)"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="/assets/icons/list.svg" alt="iconoMenu" width={35} height={25} />
-              </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="javascript:void(0)">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="javascript:void(0)">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="javascript:void(0)">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="javascript:void(0)">
-                IntercambiaLibros
-              </a>
-            </li>
-          </ul>
-          {/* Barra de busqueda */}
-          <div className="d-flex justify-content-center w-100">
-            <form className="d-flex" role="search" style={{ maxWidth: 500, width: '100%' }}>
-              <div className="input-group">
-                <input type="search" className="form-control" placeholder="Buscar" aria-label="Buscar" />
-                <button className="btn btn-outline-secondary" type="submit">
-                  <img src="/assets/icons/search.svg" alt="iconoBusqueda" width={20} height={20} />
-                </button>
-              </div>
-            </form>
+      <nav className="navbar navbar-expand-lg fixed-top pb-3">
+        <div className="container-fluid">
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link"
+                  href="javascript:void(0)"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <Image src="/assets/icons/list.svg" alt="iconoMenu" width={35} height={25} />
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item" href="javascript:void(0)">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="javascript:void(0)">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="javascript:void(0)">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" href="/">
+                  IntercambiaLibros
+                </Link>
+              </li>
+            </ul>
+            {/* Barra de busqueda */}
+            <div className="d-flex justify-content-center w-100 mx-lg-3">
+              <form className="d-flex" role="search" style={{ maxWidth: 500, width: '100%' }}>
+                <div className="input-group">
+                  <input type="search" className="form-control" placeholder="Buscar" aria-label="Buscar" />
+                  <button className="btn btn-outline-secondary" type="submit">
+                    <Image src="/assets/icons/search.svg" alt="iconoBusqueda" width={20} height={20} />
+                  </button>
+                </div>
+              </form>
+            </div>
+            {/* Menú de la derecha */}
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link d-flex align-items-center gap-2 text-nowrap px-2" href="views/subirLibro">
+                  <Image src="/assets/icons/cloud-upload.svg" alt="iconoSubirLibro" width={18} height={18} />
+                  <span className="d-lg-inline">Subir Libro</span>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link d-flex align-items-center gap-2 text-nowrap px-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalIniciarSesion"
+                  href="javascript:void(0)"
+                >
+                  <Image src="/assets/icons/person-fill.svg" alt="iconoCuenta" width={18} height={18} />
+                  <span className=" d-lg-inline">Iniciar sesión</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link d-flex align-items-center gap-2 text-nowrap ps-2" href="/views/perfil">
+                  <Image src="/assets/icons/bell.svg" alt="iconoNotificacion" width={18} height={18} />
+                  <span className="d-lg-inline">Notificacion</span>
+                </Link>
+              </li>
+            </ul>
           </div>
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link d-flex align-items-center gap-2 text-nowrap px-2" href="javascript:void(0)">
-                <img src="/assets/icons/cloud-upload.svg" alt="iconoSubirLibro" width={18} height={18} />
-                Subir Libro
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link d-flex align-items-center gap-2 text-nowrap px-2"
-                data-bs-toggle="modal"
-                data-bs-target="#modalIniciarSesion"
-                href="javascript:void(0)"
-              >
-                <img src="/assets/icons/person-fill.svg" alt="iconoCuenta" width={18} height={18} />
-                Iniciar sesión
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link d-flex align-items-center gap-2 text-nowrap ps-2" href="javascript:void(0)">
-                <img src="/assets/icons/bell.svg" alt="iconoNotificacion" width={18} height={18} />
-                Notificacion
-              </a>
-            </li>
-          </ul>
         </div>
-      </div>
-    </nav>
-    {/* Modales renderizados siempre */}
-    <LoginModal />
-    <RegistroModal />
+      </nav>
+      {/* Modales renderizados siempre */}
+      <LoginModal />
+      <RegistroModal />
     </>
   );
 }
@@ -120,7 +122,7 @@ export function LoginModal() {
               <div className="row d-flex justify-content-center align-items-center h-100 ">
                 <div className="card-body px-md-5 pb-md-5 pt-md-3 mx-md-4 rounded">
                   <div className="text-center">
-                    <img
+                    <Image
                       src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
                       style={{ width: 185 }}
                       alt="logo"
@@ -181,7 +183,7 @@ export function RegistroModal() {
                 <div className="card-body px-md-5 pb-md-5 pt-md-3 mx-md-4">
                   <div className="d-flex flex-column justify-content-center align-items-center text-center my-2 pb-4 ">
                     <h4 className="mb-0">Crear cuenta</h4>
-                    <img
+                    <Image
                       src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
                       style={{ width: 120 }}
                       alt="logo"
