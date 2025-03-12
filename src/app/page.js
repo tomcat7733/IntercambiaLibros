@@ -70,6 +70,8 @@ export default function Home() {
                 src="/assets/img/cerebro_lectura_fm_mundo.jpg"
                 className="rounded img-fluid"
                 alt="imagen de un libro y un cerebro"
+                width={580}
+                height={500}
               />
             </div>
           </div>

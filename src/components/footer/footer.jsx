@@ -1,6 +1,7 @@
-"use client";
+'use client';
 import { useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -24,50 +25,50 @@ export default function Footer() {
             <div className="col-auto  text-md-start">
               <ul className="nav flex-column ">
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
                     Sobre Nosotros
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
                     Quienes somos
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
                     Donaciones
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
                     Afiliados
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
 
-            {/* Columna 2 */}          
+            {/* Columna 2 */}
             <div className="col-auto text-center text-md-start">
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
                     Ayuda
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
                     Cookies
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
                     FAQs
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary text-nowrap">
+                  <Link href="#" className="nav-link p-0 text-body-secondary text-nowrap">
                     España
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -76,33 +77,33 @@ export default function Footer() {
             <div className="col-auto text-center text-md-start">
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
                     Localidad
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
-                  Política de privacidad
-                  </a>
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
+                    Política de privacidad
+                  </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
-                  Términos y condiciones
-                  </a>
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
+                    Términos y condiciones
+                  </Link>
                 </li>
                 <li className="nav-item mb-2 d-flex justify-content-center justify-content-md-start gap-3">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
-                    <Image src="/assets/icons/instagram.svg" width="18" height="18" alt="Instagram" />
-                  </a>
-                  <a href="#" className="nav-link p-0 text-body-secondary">
-                    <Image src="/assets/icons/facebook.svg" width="18" height="18" alt="Facebook" />
-                  </a>
-                  <a href="#" className="nav-link p-0 text-body-secondary">
-                    <Image src="/assets/icons/youtube.svg" width="18" height="18" alt="YouTube" />
-                  </a>
-                  <a href="#" className="nav-link p-0 text-body-secondary">
-                    <Image src="/assets/icons/twitter-x.svg" width="18" height="18" alt="Twitter" />
-                  </a>
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
+                    <Image src="/assets/icons/instagram.svg" width={18} height={18} alt="Instagram" />
+                  </Link>
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
+                    <Image src="/assets/icons/facebook.svg" width={18} height="18" alt="Facebook" />
+                  </Link>
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
+                    <Image src="/assets/icons/youtube.svg" width={18} height={18} alt="YouTube" />
+                  </Link>
+                  <Link href="#" className="nav-link p-0 text-body-secondary">
+                    <Image src="/assets/icons/twitter-x.svg" width={18} height={18} alt="Twitter" />
+                  </Link>
                 </li>
               </ul>
             </div>

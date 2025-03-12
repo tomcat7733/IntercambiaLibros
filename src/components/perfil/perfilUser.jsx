@@ -15,7 +15,13 @@ export default function PerfilUser() {
           <div className="col-1" />
           <div className="col-2">
             <h2 className="mb-4 ps-5">Perfil</h2>
-            <Image src="/assets/img/icono_masculino_perfil.png" style={{ width: '12rem' }} />
+            <Image
+              src="/assets/img/icono_masculino_perfil.png"
+              alt="Imaagen del usuario de perfil"
+              style={{ width: '12rem' }}
+              width={150}
+              height={180}
+            />
           </div>
           <div className="col-2 mt-5 ps-5">
             <p>
@@ -71,7 +77,9 @@ export function OpinionesPerfil() {
                         src="/assets/img/icono_masculino2.png"
                         className="rounded-circle me-3"
                         alt="Imagen de usuario"
-                        style={{ width: 50, height: 50, objectFit: 'cover' }}
+                        width={50}
+                        height={50}
+                        style={{ objectFit: 'cover' }}
                       />
                       <div>
                         <p className="mb-0 fw-medium">Saul</p>
@@ -91,7 +99,9 @@ export function OpinionesPerfil() {
                         src="/assets/img/imagen_femenino2.avif"
                         className="rounded-circle me-3"
                         alt="Imagen de usuario"
-                        style={{ width: 50, height: 50, objectFit: 'cover' }}
+                        width={50}
+                        height={50}
+                        style={{ objectFit: 'cover' }}
                       />
                       <div>
                         <p className="mb-0 fw-medium">Ana</p>
@@ -111,7 +121,9 @@ export function OpinionesPerfil() {
                         src="/assets/img/icono_masculino.png"
                         className="rounded-circle me-3"
                         alt="Imagen de usuario"
-                        style={{ width: 50, height: 50, objectFit: 'cover' }}
+                        width={50}
+                        height={50}
+                        style={{ objectFit: 'cover' }}
                       />
                       <div>
                         <p className="mb-0 fw-medium">Carlos</p>
@@ -131,7 +143,9 @@ export function OpinionesPerfil() {
                         src="/assets/img/imagen_femenino.jpg"
                         className="rounded-circle me-3"
                         alt="Imagen de usuario"
-                        style={{ width: 50, height: 50, objectFit: 'cover' }}
+                        width={50}
+                        height={50}
+                        style={{ objectFit: 'cover' }}
                       />
                       <div>
                         <p className="mb-0 fw-medium">Laura</p>
@@ -157,7 +171,9 @@ export function OpinionesPerfil() {
                       src="/assets/img/icono_masculino.png"
                       className="rounded-circle me-3"
                       alt="Imagen de usuario"
-                      style={{ width: 50, height: 50, objectFit: 'cover' }}
+                      width={50}
+                      height={50}
+                      style={{ objectFit: 'cover' }}
                     />
                     <div>
                       <p className="mb-0 fw-medium">Saul</p>
@@ -177,7 +193,9 @@ export function OpinionesPerfil() {
                       src="/assets/img/imagen_femenino.jpg"
                       className="rounded-circle me-3"
                       alt="Imagen de usuario"
-                      style={{ width: 50, height: 50, objectFit: 'cover' }}
+                      width={50}
+                      height={50}
+                      style={{ objectFit: 'cover' }}
                     />
                     <div>
                       <p className="mb-0 fw-medium">Ana</p>
@@ -197,7 +215,9 @@ export function OpinionesPerfil() {
                       src="/assets/img/icono_masculino2.png"
                       className="rounded-circle me-3"
                       alt="Imagen de usuario"
-                      style={{ width: 50, height: 50, objectFit: 'cover' }}
+                      width={50}
+                      height={50}
+                      style={{ objectFit: 'cover' }}
                     />
                     <div>
                       <p className="mb-0 fw-medium">Carlos</p>
@@ -217,7 +237,9 @@ export function OpinionesPerfil() {
                       src="/assets/img/imagen_femenino2.avif"
                       className="rounded-circle me-3"
                       alt="Imagen de usuario"
-                      style={{ width: 50, height: 50, objectFit: 'cover' }}
+                      width={50}
+                      height={50}
+                      style={{ objectFit: 'cover' }}
                     />
                     <div>
                       <p className="mb-0 fw-medium">Laura</p>

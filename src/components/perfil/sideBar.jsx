@@ -6,7 +6,7 @@ export default function SideBar() {
           {/* <div className="row"> */} ,
           {/* div className="col-2"> */}  ,
           {/* SIDE NAV */} ,
-          <ul className="nav flex-column">
+          <ul className="nav flex-column mb-5">
             <li className="nav-item">
               <Link className="nav-link active text-body-secondary py-1" aria-current="page" href="/views/perfil/misDatos">
                 Mis datos

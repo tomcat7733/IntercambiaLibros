@@ -24,7 +24,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p1.jpg"
                     className="card-img-top"
                     alt="Imagen de Terror"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -40,7 +42,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p2.jpg"
                     className="card-img-top"
                     alt="Imagen de ficción"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0 w-100 text-center text-nowrap">
@@ -56,7 +60,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p3.jpg"
                     className="card-img-top"
                     alt="Imagen de Romance"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -72,7 +78,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p4.jpg"
                     className="card-img-top"
                     alt="Imagen del Cosmos"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -88,7 +96,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p5.jpg"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -106,7 +116,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p1.jpg"
                     className="card-img-top"
                     alt="Imagen de Terror"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -122,7 +134,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p2.jpg"
                     className="card-img-top"
                     alt="Imagen de ficción"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0 w-100 text-center text-nowrap">
@@ -138,7 +152,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p3.jpg"
                     className="card-img-top"
                     alt="Imagen de Romance"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -154,7 +170,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p4.jpg"
                     className="card-img-top"
                     alt="Imagen del Cosmos"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -170,7 +188,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p5.jpg"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -192,7 +212,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p1.jpg"
                     className="card-img-top"
                     alt="Imagen de Terror"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -208,7 +230,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p2.jpg"
                     className="card-img-top"
                     alt="Imagen de ficción"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0 w-100 text-center text-nowrap">
@@ -224,7 +248,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p3.jpg"
                     className="card-img-top"
                     alt="Imagen de Romance"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -240,7 +266,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p4.jpg"
                     className="card-img-top"
                     alt="Imagen del Cosmos"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -256,7 +284,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p5.jpg"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -274,7 +304,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p1.jpg"
                     className="card-img-top"
                     alt="Imagen de Terror"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -290,7 +322,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p2.jpg"
                     className="card-img-top"
                     alt="Imagen de ficción"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0 w-100 text-center text-nowrap">
@@ -306,7 +340,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p3.jpg"
                     className="card-img-top"
                     alt="Imagen de Romance"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -322,7 +358,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p4.jpg"
                     className="card-img-top"
                     alt="Imagen del Cosmos"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -338,7 +376,9 @@ export default function CarouselDoble() {
                     src="/assets/img/p5.jpg"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn  border-0">
@@ -356,7 +396,7 @@ export default function CarouselDoble() {
             data-bs-target="#carouselDonations"
             data-bs-slide="prev"
           >
-            <Image src="/assets/icons/Back1.gif" alt="atras" style={{ width: '65px', height: '65px' }} />
+            <Image src="/assets/icons/Back1.gif" alt="atras" height={65} width={65} />
 
             <span className="visually-hidden">Previous</span>
           </button>
@@ -366,7 +406,7 @@ export default function CarouselDoble() {
             data-bs-target="#carouselDonations"
             data-bs-slide="next"
           >
-            <Image src="/assets/icons/Forward.gif" alt="atras" style={{ width: '50px', height: '50px' }} />
+            <Image src="/assets/icons/Forward.gif" alt="atras" height={65} width={65} />
             <span className="visually-hidden">Next</span>
           </button>
         </div>

@@ -23,7 +23,9 @@ export default function CarouselSimple() {
                     src="/assets/img/terrifying-hand-silhouettes-studio.jpg"
                     className="card-img-top"
                     alt="Imagen de Terror"
-                    style={{ height: 200, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -39,9 +41,11 @@ export default function CarouselSimple() {
                     src="/assets/img/science-fiction-7828391_1280.jpg"
                     className="card-img-top"
                     alt="Imagen de ficción"
-                    style={{ height: 200, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
-                  <div className="card-body d-flex flex-column justify-content-center p-0">
+                  <div className="card-b*ody d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0 w-100 text-center text-nowrap">
                       CIENCIA FICCIÓN
                     </a>
@@ -55,7 +59,9 @@ export default function CarouselSimple() {
                     src="/assets/img/vintage-4188771_1280.jpg"
                     className="card-img-top"
                     alt="Imagen de Romance"
-                    style={{ height: 200, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -71,7 +77,9 @@ export default function CarouselSimple() {
                     src="/assets/img/cosmos.jpg"
                     className="card-img-top"
                     alt="Imagen del Cosmos"
-                    style={{ height: 200, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -86,8 +94,10 @@ export default function CarouselSimple() {
                   <Image
                     src="/assets/img/kyoto-jishoji-temple-fckidpm20fotp9rp.jpg"
                     className="card-img-top"
+                    height={200}
+                    width={100}
                     alt="..."
-                    style={{ height: 200, objectFit: 'cover' }}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -108,8 +118,10 @@ export default function CarouselSimple() {
                   <Image
                     src="/assets/img/terror-1.png"
                     className="card-img-top"
+                    height={200}
+                    width={100}
                     alt="Imagen de Terror"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -124,8 +136,10 @@ export default function CarouselSimple() {
                   <Image
                     src="/assets/img/terror-2.png"
                     className="card-img-top"
+                    height={200}
+                    width={100}
                     alt="Imagen de ficción"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0 w-100 text-center text-nowrap">
@@ -141,7 +155,9 @@ export default function CarouselSimple() {
                     src="/assets/img/terror-3.png"
                     className="card-img-top"
                     alt="Imagen de Romance"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -157,7 +173,9 @@ export default function CarouselSimple() {
                     src="/assets/img/terror-4.png"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -173,7 +191,9 @@ export default function CarouselSimple() {
                     src="/assets/img/terror-5.png"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -195,7 +215,9 @@ export default function CarouselSimple() {
                     src="/assets/img/portada1.png"
                     className="card-img-top"
                     alt="Imagen de Terror"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -211,7 +233,9 @@ export default function CarouselSimple() {
                     src="/assets/img/portada2.png"
                     className="card-img-top"
                     alt="Imagen de ficción"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0 w-100 text-center text-nowrap">
@@ -227,7 +251,9 @@ export default function CarouselSimple() {
                     src="/assets/img/Portada3.png"
                     className="card-img-top"
                     alt="Imagen de Romance"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -243,7 +269,9 @@ export default function CarouselSimple() {
                     src="/assets/img/Portada4.png"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -259,7 +287,9 @@ export default function CarouselSimple() {
                     src="/assets/img/sereno-templo-zen-japones-tranquilo-fondo-pantalla-jardin-telefono_964851-8823.avif"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -279,7 +309,7 @@ export default function CarouselSimple() {
           data-bs-slide="prev"
           style={{ top: '20%' }}
         >
-          <Image src="/assets/icons/Back1.gif" alt="atras" style={{ width: '65px', height: '65px' }} />
+          <Image src="/assets/icons/Back1.gif" alt="atras" width={65} height={65} />
 
           <span className="visually-hidden">Previous</span>
         </button>
@@ -290,7 +320,7 @@ export default function CarouselSimple() {
           data-bs-slide="next"
           style={{ top: '20%' }}
         >
-          <Image src="/assets/icons/Forward.gif" alt="atras" style={{ width: '50px', height: '50px' }} />
+          <Image src="/assets/icons/Forward.gif" alt="atras" width={50} height={50} />
           <span className="visually-hidden">Next</span>
         </button>
       </div>
@@ -321,7 +351,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/terrifying-hand-silhouettes-studio.jpg"
                     className="card-img-top"
                     alt="Imagen de Terror"
-                    style={{ height: 200, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -337,7 +369,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/science-fiction-7828391_1280.jpg"
                     className="card-img-top"
                     alt="Imagen de ficción"
-                    style={{ height: 200, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0 w-100 text-center text-nowrap">
@@ -353,7 +387,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/vintage-4188771_1280.jpg"
                     className="card-img-top"
                     alt="Imagen de Romance"
-                    style={{ height: 200, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -369,7 +405,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/cosmos.jpg"
                     className="card-img-top"
                     alt="Imagen del Cosmos"
-                    style={{ height: 200, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -385,7 +423,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/kyoto-jishoji-temple-fckidpm20fotp9rp.jpg"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 200, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -407,7 +447,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/terror-1.png"
                     className="card-img-top"
                     alt="Imagen de Terror"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -423,7 +465,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/terror-2.png"
                     className="card-img-top"
                     alt="Imagen de ficción"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0 w-100 text-center text-nowrap">
@@ -439,7 +483,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/terror-3.png"
                     className="card-img-top"
                     alt="Imagen de Romance"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -455,7 +501,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/terror-4.png"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -471,7 +519,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/terror-5.png"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -493,7 +543,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/portada1.png"
                     className="card-img-top"
                     alt="Imagen de Terror"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -509,7 +561,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/portada2.png"
                     className="card-img-top"
                     alt="Imagen de ficción"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0 w-100 text-center text-nowrap">
@@ -525,7 +579,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/Portada3.png"
                     className="card-img-top"
                     alt="Imagen de Romance"
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -541,7 +597,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/Portada4.png"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -557,7 +615,9 @@ export function CarouselNuevosLibros() {
                     src="/assets/img/sereno-templo-zen-japones-tranquilo-fondo-pantalla-jardin-telefono_964851-8823.avif"
                     className="card-img-top"
                     alt="..."
-                    style={{ height: 190, objectFit: 'cover' }}
+                    height={200}
+                    width={100}
+                    style={{ objectFit: 'cover' }}
                   />
                   <div className="card-body d-flex flex-column justify-content-center p-0">
                     <a href="#" className="btn border-0">
@@ -577,7 +637,7 @@ export function CarouselNuevosLibros() {
           data-bs-slide="prev"
           style={{ top: '20%' }}
         >
-          <Image src="/assets/icons/Back1.gif" alt="atras" style={{ width: '65px', height: '65px' }} />
+          <Image src="/assets/icons/Back1.gif" alt="atras" width={65} height={65}/>
 
           <span className="visually-hidden">Previous</span>
         </button>
@@ -588,7 +648,7 @@ export function CarouselNuevosLibros() {
           data-bs-slide="next"
           style={{ top: '20%' }}
         >
-          <Image src="/assets/icons/Forward.gif" alt="atras" style={{ width: '50px', height: '50px' }} />
+          <Image src="/assets/icons/Forward.gif" alt="atras" width={50} height={50} />
           <span className="visually-hidden">Next</span>
         </button>
       </div>

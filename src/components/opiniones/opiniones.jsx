@@ -35,7 +35,9 @@ export default function Opiniones() {
                             src="/assets/img/icono_masculino2.png"
                             className="rounded-circle me-3"
                             alt="Imagen de usuario"
-                            style={{ width: 50, height: 50, objectFit: 'cover' }}
+                            height={50}
+                            width={50}
+                            style={{ objectFit: 'cover' }}
                           />
                           <div>
                             <p className="mb-0 fw-medium">Saul</p>
@@ -55,7 +57,9 @@ export default function Opiniones() {
                             src="/assets/img/imagen_femenino2.avif"
                             className="rounded-circle me-3"
                             alt="Imagen de usuario"
-                            style={{ width: 50, height: 50, objectFit: 'cover' }}
+                            height={50}
+                            width={50}
+                            style={{ objectFit: 'cover' }}
                           />
                           <div>
                             <p className="mb-0 fw-medium">Ana</p>
@@ -75,7 +79,9 @@ export default function Opiniones() {
                             src="/assets/img/icono_masculino.png"
                             className="rounded-circle me-3"
                             alt="Imagen de usuario"
-                            style={{ width: 50, height: 50, objectFit: 'cover' }}
+                            height={50}
+                            width={50}
+                            style={{ objectFit: 'cover' }}
                           />
                           <div>
                             <p className="mb-0 fw-medium">Carlos</p>
@@ -95,7 +101,9 @@ export default function Opiniones() {
                             src="/assets/img/imagen_femenino.jpg"
                             className="rounded-circle me-3"
                             alt="Imagen de usuario"
-                            style={{ width: 50, height: 50, objectFit: 'cover' }}
+                            height={50}
+                            width={50}
+                            style={{ objectFit: 'cover' }}
                           />
                           <div>
                             <p className="mb-0 fw-medium">Laura</p>
@@ -122,7 +130,9 @@ export default function Opiniones() {
                             src="/assets/img/icono_masculino.png"
                             className="rounded-circle me-3"
                             alt="Imagen de usuario"
-                            style={{ width: 50, height: 50, objectFit: 'cover' }}
+                            height={50}
+                            width={50}
+                            style={{ objectFit: 'cover' }}
                           />
                           <div>
                             <p className="mb-0 fw-medium">Saul</p>
@@ -142,7 +152,9 @@ export default function Opiniones() {
                             src="/assets/img/imagen_femenino.jpg"
                             className="rounded-circle me-3"
                             alt="Imagen de usuario"
-                            style={{ width: 50, height: 50, objectFit: 'cover' }}
+                            height={50}
+                            width={50}
+                            style={{ objectFit: 'cover' }}
                           />
                           <div>
                             <p className="mb-0 fw-medium">Ana</p>
@@ -162,7 +174,9 @@ export default function Opiniones() {
                             src="/assets/img/icono_masculino2.png"
                             className="rounded-circle me-3"
                             alt="Imagen de usuario"
-                            style={{ width: 50, height: 50, objectFit: 'cover' }}
+                            height={50}
+                            width={50}
+                            style={{ objectFit: 'cover' }}
                           />
                           <div>
                             <p className="mb-0 fw-medium">Carlos</p>
@@ -182,7 +196,9 @@ export default function Opiniones() {
                             src="/assets/img/imagen_femenino2.avif"
                             className="rounded-circle me-3"
                             alt="Imagen de usuario"
-                            style={{ width: 50, height: 50, objectFit: 'cover' }}
+                            height={50}
+                            width={50}
+                            style={{ objectFit: 'cover' }}
                           />
                           <div>
                             <p className="mb-0 fw-medium">Laura</p>
@@ -201,9 +217,7 @@ export default function Opiniones() {
             type="button"
             data-bs-target="#carouselOpiniones"
             data-bs-slide="prev"
-          >
-      
-          </button>
+          ></button>
           <button
             className="carousel-control-next d-none"
             type="button"
