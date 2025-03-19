@@ -217,7 +217,7 @@ export default function Reportes() {
                       onChange={handleChange}
                     />
                     <label className="form-check-label" htmlFor="gridCheck">
-                      Acepto los términos y condiciones
+                      Acepto los términos y condiciones {/* PONER UN Link con el import hacia los terminos y condiciones cuando esten READY */}
                     </label>
                   </div>
                   {errors.acepto && <small className="text-danger">{errors.acepto}</small>}
