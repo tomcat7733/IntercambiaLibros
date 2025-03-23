@@ -10,9 +10,9 @@ async function testConnection() {
     const { data, error } = await supabase.from('libros').select('*');
     
     if (error) {
-        console.error('❌ Error conectando a Supabase:', error.message);
+        console.error('Error conectando a Supabase:', error.message);
     } else {
-        console.log('✅ Conexión exitosa. Datos obtenidos:', data);
+        console.log('Conexión exitosa. Datos obtenidos:', data);
     }
 }
 
