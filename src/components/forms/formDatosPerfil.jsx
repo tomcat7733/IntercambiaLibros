@@ -39,6 +39,10 @@ export default function formDatosPerfil() {
                 <input type="text" className="form-control" id="floatingInputDescripcion" placeholder="Titulo" />
                 <label htmlFor="floatingInputDescripcion">Información sobre ti</label>
               </div>
+              <div className="form-floating my-3">
+                <input type="text" className="form-control" id="floatingInputGenerosFav" placeholder="GenerosFav" />
+                <label htmlFor="floatingInputGenerosFav">Generos favoritos</label>
+              </div>
               <div className="d-flex justify-content-between gap-3 mt-3">
                 <button className="btn btn-outline-secondary" style={{ minWidth: '45%' }}>
                   Cancelar

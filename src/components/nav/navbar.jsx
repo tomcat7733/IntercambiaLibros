@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <>
       <header>
-        <nav className="navbar fixed-top pb-3">
+        <nav className="navbar fixed-top pb-3 shadow-sm">
           <div className="container-fluid">
             <div className="d-flex w-100 justify-content-between align-items-center">
               {/* Menú izquierdo */}
@@ -18,12 +18,12 @@ export default function Nav() {
                   <ul className="dropdown-menu" style={{ position: 'absolute' }}>
                     <li>
                       <Link className="dropdown-item" href="/action">
-                        Acción
+                        Generos
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="/another-action">
-                        Otra acción
+                      <Link className="dropdown-item" href="/views/footer/donaciones">
+                        Donaciones
                       </Link>
                     </li>
                     <li>
@@ -31,7 +31,7 @@ export default function Nav() {
                     </li>
                     <li>
                       <Link className="dropdown-item" href="/something-else">
-                        Algo más
+                        Cerrar Sesión
                       </Link>
                     </li>
                   </ul>

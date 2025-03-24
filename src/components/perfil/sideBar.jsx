@@ -18,11 +18,6 @@ export default function SideBar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-body-secondary py-1" href="#">
-                Opiniones
-              </Link>
-            </li>
-            <li className="nav-item">
               <a className="nav-link text-body-secondary py-1" href="#">
                 Mis libros
               </a>

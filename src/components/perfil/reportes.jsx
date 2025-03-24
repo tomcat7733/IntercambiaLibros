@@ -31,12 +31,12 @@ export default function Reportes() {
     const msg = 'Este campo es obligatorio.';
 
     if (!formValues.nombre.trim()) {
-      newErrors.nombre = requiredMsg;
+      newErrors.nombre = msg;
     } else if (formValues.nombre.trim().length < 3) {
       newErrors.nombre = 'El nombre debe contener al menos 3 caracteres.';
     }
     if (!formValues.apellidos.trim()) {
-      newErrors.apellidos = requiredMsg;
+      newErrors.apellidos = msg;
     } else if (formValues.apellidos.trim().length < 3) {
       newErrors.apellidos = 'El apellido debe contener al menos 3 caracteres.';
     }
@@ -47,8 +47,14 @@ export default function Reportes() {
       newErrors.email = 'El email no es válido.';
     }
 
+    if(!formValues.motivo.trim()){
+      newErrors.motivo = msg;
+    }else if(formValues.motivo.trim().length < 3){
+      newErrors.motivo = 'El título debe contener al menos 3 caracteres.';
+    }
+
     if (!formValues.mensaje.trim()) {
-      newErrors.mensaje = requiredMsg;
+      newErrors.mensaje = msg;
     } else if (formValues.mensaje.trim().length < 20) {
       newErrors.mensaje =
         'El mensaje debe contener al menos 20 caracteres para explicar detalladamente el motivo. Por favor, proporciona una explicación completa.';
@@ -74,7 +80,7 @@ export default function Reportes() {
     // Si no hay errores, puedes proceder a enviar los datos al servidor
     setErrors({});
     console.log('Formulario válido:', formValues);
-    // Aqui hacemos el call a la api
+    // Aqui hacemos el call a la api cuando este lista
   };
 
   return (

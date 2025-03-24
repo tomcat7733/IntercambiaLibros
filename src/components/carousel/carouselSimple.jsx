@@ -6,7 +6,7 @@ export default function CarouselSimple() {
     <div className="container-fluid">
       <div id="carouselSimpleGenero" className="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
         {/* AÑADIR PARA QUE FUNCIONE EL CAROUSEL + PONER TIEMPO data-bs-ride="carousel"*/}
-        <div className="border-bottom m-4 pt-3 pb-2">
+        <div className="border-bottom m-4 pb-2">
           <div className="d-flex justify-content-center justify-content-md-start ps-lg-5 ms-lg-5">
             <h4 className="m-0 ps-1">GÉNEROS</h4>
           </div>
@@ -309,7 +309,7 @@ export default function CarouselSimple() {
           data-bs-slide="prev"
           style={{ top: '20%' }}
         >
-          <Image src="/assets/icons/Back1.gif" alt="atras" width={65} height={65} />
+          <Image src="/assets/icons/Back.gif" alt="atras" width={65} height={65} />
 
           <span className="visually-hidden">Previous</span>
         </button>
@@ -320,7 +320,7 @@ export default function CarouselSimple() {
           data-bs-slide="next"
           style={{ top: '20%' }}
         >
-          <Image src="/assets/icons/Forward.gif" alt="atras" width={50} height={50} />
+          <Image src="/assets/icons/Forward1.gif" alt="atras" width={50} height={50} />
           <span className="visually-hidden">Next</span>
         </button>
       </div>
@@ -637,7 +637,7 @@ export function CarouselNuevosLibros() {
           data-bs-slide="prev"
           style={{ top: '20%' }}
         >
-          <Image src="/assets/icons/Back1.gif" alt="atras" width={65} height={65}/>
+          <Image src="/assets/icons/Back.gif" alt="atras" width={65} height={65}/>
 
           <span className="visually-hidden">Previous</span>
         </button>
@@ -648,7 +648,7 @@ export function CarouselNuevosLibros() {
           data-bs-slide="next"
           style={{ top: '20%' }}
         >
-          <Image src="/assets/icons/Forward.gif" alt="atras" width={50} height={50} />
+          <Image src="/assets/icons/Forward1.gif" alt="atras" width={50} height={50} />
           <span className="visually-hidden">Next</span>
         </button>
       </div>

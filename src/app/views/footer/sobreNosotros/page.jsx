@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AboutUs() {
     return (
-      <div className="container my-5">
+      <main className="container my-5">
         <h2 className="text-center mb-4">Sobre Nosotros</h2>
         <div className="row align-items-center">
           {/* Imagen a la izquierda en dispositivos grandes, arriba en móviles */}
@@ -69,7 +69,7 @@ export default function AboutUs() {
             <p>Queremos que más personas tengan acceso a la cultura y a nuevas lecturas.</p>
           </div>
         </div>
-      </div>
+      </main>
     );
   }
   

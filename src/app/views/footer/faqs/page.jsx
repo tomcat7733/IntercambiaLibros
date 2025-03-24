@@ -53,7 +53,7 @@ export default function FAQs() {
     },
   ];
   return (
-    <div className="container my-5">
+    <main className="container my-5">
       <h2 className="text-center mb-4">Preguntas Frecuentes (FAQs)</h2>
       <div className="accordion" id="faqAccordion">
         {faqs.map((faq, index) => (
@@ -81,6 +81,6 @@ export default function FAQs() {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 }

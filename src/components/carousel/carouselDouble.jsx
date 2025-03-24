@@ -396,7 +396,7 @@ export default function CarouselDoble() {
             data-bs-target="#carouselDonations"
             data-bs-slide="prev"
           >
-            <Image src="/assets/icons/Back1.gif" alt="atras" height={65} width={65} />
+            <Image src="/assets/icons/Back.gif" alt="atras" height={65} width={65} />
 
             <span className="visually-hidden">Previous</span>
           </button>
@@ -406,7 +406,7 @@ export default function CarouselDoble() {
             data-bs-target="#carouselDonations"
             data-bs-slide="next"
           >
-            <Image src="/assets/icons/Forward.gif" alt="atras" height={65} width={65} />
+            <Image src="/assets/icons/Forward1.gif" alt="atras" height={50} width={50} />
             <span className="visually-hidden">Next</span>
           </button>
         </div>
