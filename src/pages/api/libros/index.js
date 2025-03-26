@@ -7,8 +7,6 @@ export default async function handler(req, res) {
     return res.status(200).json(data);
   }
 
-  return res.status(405).json({ message: 'Método no permitido' });
-
   if (req.method === 'POST') {
     const {
       isbn,
@@ -49,5 +47,6 @@ export default async function handler(req, res) {
     return res.status(201).json(data[0]);
   }
 
+  // Si no es GET ni POST
   return res.status(405).json({ message: 'Método no permitido' });
 }
