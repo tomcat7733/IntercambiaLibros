@@ -1,18 +1,18 @@
-import { supabase } from '@/lib/supabase';
+import { supabase } from '../../lib/supabase';
 
 export default async function handler(req, res) {
   const { isbn } = req.query;
 
-  if (req.method === 'GET') {
-    const { data, error } = await supabase
+  try {
+    const { data: libro, error } = await supabase
       .from('libros')
       .select('*')
       .eq('isbn', isbn)
-      .single();
+      .single();  // Devuelve un solo registro
 
-    if (error) return res.status(404).json({ error: error.message });
-    return res.status(200).json(data);
+    if (error) throw error;
+    res.status(200).json(libro);
+  } catch (error) {
+    res.status(404).json({ error: 'Libro no encontrado' });
   }
-
-  return res.status(405).json({ message: 'Método no permitido' });
 }
