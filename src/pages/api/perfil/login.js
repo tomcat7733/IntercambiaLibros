@@ -7,54 +7,43 @@ export default async function handler(req, res) {
   }
 
   const { correo_electronico, contrasena } = req.body;
-  console.log('Intentando login con:', correo_electronico);
 
   if (!correo_electronico || !contrasena) {
-    console.log('Campos vacíos');
     return res.status(400).json({ message: 'Correo y contraseña obligatorios' });
   }
 
   try {
-    // 1. Buscar usuario
-    const { data: usuarios, error } = await supabase
+    // Buscar usuario por correo electrónico
+    const { data: usuario, error } = await supabase
       .from('usuarios')
       .select('*')
-      .eq('correo_electronico', correo_electronico);
+      .eq('correo_electronico', correo_electronico)
+      .single(); // Asegura que devuelve solo un usuario
 
-    console.log('🔎 Resultado de búsqueda:', usuarios);
-    if (error) {
-      console.error('Error al buscar usuario:', error);
-      return res.status(500).json({ message: 'Error interno del servidor' });
-    }
-
-    if (!usuarios || usuarios.length === 0) {
-      console.log('Usuario no encontrado');
+    if (error || !usuario) {
       return res.status(401).json({ message: 'Correo o contraseña incorrectos' });
     }
 
-    const usuario = usuarios[0];
+    // Comparar contraseña
+    const contrasenaValida = await bcrypt.compare(contrasena, usuario.contrasena);
 
-    // 2. Comparar contraseña
-    const esValida = await bcrypt.compare(contrasena, usuario.contrasena);
-    console.log('Contraseña válida:', esValida);
-
-    if (!esValida) {
+    if (!contrasenaValida) {
       return res.status(401).json({ message: 'Correo o contraseña incorrectos' });
     }
 
-    // 3. Usuario autenticado
-    console.log('Inicio de sesión correcto para:', usuario.nombre_usuario);
-
+    // Éxito: se devuelve solo lo necesario
     return res.status(200).json({
       message: 'Inicio de sesión correcto',
       user: {
         id: usuario.id,
         nombre_usuario: usuario.nombre_usuario,
         correo_electronico: usuario.correo_electronico,
+        reputacion: usuario.reputacion,
+        ubicacion: usuario.ubicacion,
       },
     });
+
   } catch (err) {
-    console.error('Error general en login:', err);
     return res.status(500).json({ message: 'Error del servidor' });
   }
 }
