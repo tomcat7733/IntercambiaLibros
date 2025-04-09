@@ -15,7 +15,9 @@ export default async function handler(req, res) {
   } = req.body;
 
   if (!nombre_usuario || !correo_electronico || !contrasena) {
-    return res.status(400).json({ message: 'Nombre, correo y contraseña son obligatorios' });
+    return res.status(400).json({
+      message: 'Nombre, correo y contraseña son obligatorios'
+    });
   }
 
   try {
@@ -35,14 +37,20 @@ export default async function handler(req, res) {
       .select();
 
     if (error) {
-      console.error('Error Supabase:', error);
-      return res.status(500).json({ message: 'Error al crear el usuario', error });
+      console.error('❌ Error Supabase:', error);
+      return res.status(500).json({
+        message: 'Error al crear el usuario',
+        error: error.message || error.details || error
+      });
     }
 
-    return res.status(201).json({ message: 'Usuario creado con éxito', user: data[0] });
+    return res.status(201).json({
+      message: 'Usuario creado con éxito',
+      user: data[0],
+    });
 
   } catch (err) {
-    console.error('Error general:', err);
+    console.error('❌ Error general:', err);
     return res.status(500).json({ message: 'Error del servidor' });
   }
 }
